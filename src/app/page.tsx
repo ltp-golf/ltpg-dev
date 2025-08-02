@@ -1,22 +1,41 @@
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-dark px-6">
-      <div className="text-center space-y-6">
-        
+    <>
+      <Head>
+        <title>LTPGolf – Coming Soon</title>
+        <link rel="icon" href="/logo.png" />
+      </Head>
 
-        <h1 className="text-5xl font-bold tracking-tight text-white-900">
-          Coming Soon
-        </h1>
-        <p className="text-lg text-white-600">
-          We’re preparing something premium for golf lovers.
-        </p>
+      <div className="flex items-center justify-center min-h-screen bg-[#0D1C2E] px-6">
+        <div className="text-center space-y-6">
+          {/* Logo */}
+          <div className="flex justify-center">
+            <Image
+              src="/logo.png"
+              alt="LTPGolf Logo"
+              width={100}
+              height={100}
+              className="mx-auto"
+              priority
+            />
+          </div>
 
-        <div className="mt-6">
-          <p className="text-sm text-white-500">Stay tuned at LTP - Golf</p>
+          {/* Heading */}
+          <h1 className="text-5xl font-bold tracking-tight text-white">
+            Coming Soon
+          </h1>
+          <p className="text-lg text-gray-300">
+            We’re preparing something premium for golf lovers.
+          </p>
+
+          <div className="mt-6">
+            <p className="text-sm text-gray-400">Stay tuned at LTP - Golf</p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
