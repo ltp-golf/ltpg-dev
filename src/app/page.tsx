@@ -4,22 +4,18 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>LTPGolf – Coming Soon</title>
-        <link rel="icon" href="/logo.png" />
-      </Head>
+
 
       <div className="flex items-center justify-center min-h-screen bg-[#0D1C2E] px-6">
         <div className="text-center space-y-6">
           {/* Logo */}
           <div className="flex justify-center">
-            <Image
+            <img
               src="/logo.png"
               alt="LTPGolf Logo"
-              width={100}
-              height={100}
+              width="300"
+              height="300"
               className="mx-auto"
-              priority
             />
           </div>
 
