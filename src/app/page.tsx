@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Coming Soon | LTPGolf</title>
+        <title>Coming Soon | LTPGGolf</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
