@@ -10,29 +10,26 @@ export default function Home() {
       </Head>
 
       <div
-        className="flex items-center justify-center min-h-screen px-6 bg-cover bg-center"
+        className="flex flex-col items-center justify-center min-h-screen px-6 bg-cover bg-center text-center"
         style={{ backgroundImage: "url('/closeup-golf-ball.jpg')" }}
       >
-        <div className="text-center space-y-6 bg-white/80 p-8 rounded-xl shadow-lg backdrop-blur-md">
-          {/* Logo */}
-          <div className="flex justify-center">
-            <img
-              src="/logo.png"
-              alt="LTPGolf Logo"
-              width="300"
-              height="300"
-              className="mx-auto"
-            />
-          </div>
+        {/* Logo */}
+        <img
+          src="/logo.png"
+          alt="LTPGolf Logo"
+          width="200"
+          height="200"
+          className="mb-6"
+        />
 
-          {/* Heading */}
-          <h1 className="text-5xl font-bold tracking-tight text-black">
-            Coming Soon
-          </h1>
-          <p className="text-lg text-gray-700">
-            We’re preparing something premium for golf lovers.
-          </p>
-        </div>
+        {/* Heading */}
+        <h1 className="text-4xl sm:text-5xl font-bold text-[#0D1C2E] mb-3">
+          We&apos;re Coming Soon
+        </h1>
+
+        <p className="text-md sm:text-lg text-[#0D1C2E]/80">
+          We’re preparing something premium for golf lovers.
+        </p>
       </div>
     </>
   );
